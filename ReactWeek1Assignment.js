@@ -17,6 +17,6 @@ class Bootcamp {
     }
       } 
         
-const bootcamp1 = new Bootcamp("Isaac", 1, 0);
+const bootcamp1 = new Bootcamp("jean", 1, 0);
 bootcamp1
 
