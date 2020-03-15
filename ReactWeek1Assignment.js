@@ -13,10 +13,29 @@ class Bootcamp {
         this.students = students;
     }
     registerStudent(studentToRegister){
-        console.log(`${this.name}`);
+        if(this.students.includes(studentToRegister)){
+            console.log("Already Registered")
+        }
+        else{
+            this.students.push(studentToRegister)
+            console.log(`Registering ${studentToRegister.email} to the bootcamp ${this.level}.`);
+        }
+        return this.students
     }
-      } 
+
+}
+
         
-const bootcamp1 = new Bootcamp("jean", 1, 0);
-bootcamp1
+const Nucamp = new Bootcamp("Nucamp", "react");
+const Nucamp2 = new Bootcamp("Other", "js");
+
+const Jean = new Student("Jean", "jean@gmail.com", "Detroit");
+const juan = new Student("juan", "juan@gmail.com", "Detroit");
+
+bootcamp1.registerStudent(Jean);
+
+bootcamp1.registerStudent(juan);
+bootcamp1.registerStudent(juan);
+console.log(Nucamp)
+
 
