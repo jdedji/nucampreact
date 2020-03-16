@@ -32,10 +32,10 @@ const Nucamp2 = new Bootcamp("Other", "js");
 const Jean = new Student("Jean", "jean@gmail.com", "Detroit");
 const juan = new Student("juan", "juan@gmail.com", "Detroit");
 
-bootcamp1.registerStudent(Jean);
+Nucamp.registerStudent(Jean);
 
-bootcamp1.registerStudent(juan);
-bootcamp1.registerStudent(juan);
+Nucamp.registerStudent(juan);
+Nucamp.registerStudent(juan);
 console.log(Nucamp)
 
 
